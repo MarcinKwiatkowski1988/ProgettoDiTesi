@@ -12,12 +12,6 @@ function animate() {
   }
 
 
-function animate_2 () {
-  render();
-  requestAnimationFrame( animate );
-  }
-
-
 function animate_onAutomaticCamera () {
   var delta = clock.getDelta();
   THREE.AnimationHandler.update(delta);

@@ -1,9 +1,6 @@
-var automaticORmanual;
 var camera;
-var cameraEye;
 var clock;
-var light1;
-var divWithInfo;
+var GET = {};
 var groupSelected;
 var keyboard;
 var mouse = { x: 0, y: 0 };
@@ -16,98 +13,27 @@ var serversClickableFaces = [];
 var SCFsupp = [];
 var stats;
 var statsContainer;
-var unlockWMovement; 
-var unlockSMovement; 
-var unlockAMovement; 
-var unlockDMovement;
 
 
-function init () {
-      createPathsFromAllSVG ();
-
-      //v9.4
-      //automaticORmanual = 1; //0->automatic; 1->manual
-      automaticORmanual = 0; //0->automatic; 1->manual
-      clock = new THREE.Clock();
-      scene = new THREE.Scene();
-
-      initStats ();
-
-      //v9.4
-      initCameraAutomatic();
-      //initCameraManual();
-      initCameraEye();  
-      initLights();
-      initRenderer();
-      initDivWithConfig ();
-
-      initCeiling();
-      initFloor();
-      initObjects();
-      initWalls();
-
-      //v9.4
-      getPathAndRun ();
-
-      keyboard = new THREEx.KeyboardState();
-      projector = new THREE.Projector();
-
-      render();
-
-      document.addEventListener( 'mousedown', onDocumentMouseDown, false );
-      window.addEventListener( 'resize', onWindowResize, false );
-      
-      }
-
-
-//v10
-function init_2 () {
+function init_base () {
     createPathsFromAllSVG ();
 
     clock = new THREE.Clock();
     scene = new THREE.Scene();
+    keyboard = new THREEx.KeyboardState();
+    projector = new THREE.Projector();
 
-    initCameraFromTop();
+    initStats ();
+
     initLights();
-    initRenderer();
+    }
 
+
+function init_objects () {
     initFloor();
-    initObjects();
-    initWalls();
-
-    render();
+    initServers();
+    initWalls();      
     }
-
-
-function initCameraAutomatic () {
-	camera = new THREE.PerspectiveCamera( 70, windowInnerWidth / window.innerHeight, 0.1, 3000);
-	scene.add( camera );
-	}    
-
-
-function initCameraEye () {
-    var cameraEye_geometry = new THREE.CubeGeometry( 0.001, 0.001, 0.001 );  
-    var cameraEye_material  = new THREE.MeshBasicMaterial( { color: 0xffffff, opacity : 1, transparent : true, depthWrite : false } );
-    cameraEye = new THREE.Mesh( cameraEye_geometry, cameraEye_material );
-    cameraEye.position.set( 0,20,0 );
-    scene.add( cameraEye );
-    }  
-
-
-function initCameraFromTop () {
-    camera = new THREE.PerspectiveCamera( 70, ( window.innerWidth ) / window.innerHeight, 0.1, 3000);
-    camera.position.x = 6;
-    camera.position.y = 30;
-    camera.position.z = -22.25;
-    camera.lookAt( new THREE.Vector3( 6,0,-22.5 ) );
-    scene.add( camera );
-    }
-
-
-function initCameraManual () {
-    camera = new THREE.PerspectiveCamera( 45, windowInnerWidth / window.innerHeight, 0.1, 3000);
-    scene.add( camera );
-    }      
 
 
 function initCeiling () {
@@ -147,71 +73,6 @@ function initCeiling () {
     }
 
 
-function initDivWithConfig () {
-	divWithInfo = document.createElement('div');
-	divWithInfo.class = 'divWithInfoControls';
-    divWithInfo.style.position = 'absolute';
-    divWithInfo.style.top = '10px';
-    divWithInfo.style.width = '100%';
-    divWithInfo.style.textAlign = 'center';
-    var groupToDisplay = '<p id="pSelectGroup" style="display: block;">Select the user group: ';
-    groupToDisplay += '<select id="selectGroup" name="selectGroup">';
-    groupToDisplay += '<option selected value="none">Nothing selected</option>';
-    for ( var g in userGroups ) 
-        groupToDisplay += '<option value="' + g + '">' + g + '</option>';  
-    groupToDisplay += '</select></p>';
-    divWithInfo.innerHTML += groupToDisplay;
-    var accessiblePathsToDisplay = '<p id="pSelectAccessiblePaths" style="display: block;">Select the accessible paths: ';
-    accessiblePathsToDisplay += '<select id="selectAccessiblePaths" name="selectAccessiblePaths" onchange="applyAccessiblePathsSelection()">';
-    for ( var g in userGroups ) {
-        for ( var ap=0; ap<userGroups[ g ].accessiblePaths.length; ap++ ) {
-            var pathsForThisGroup = userGroups[ g ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ];
-            accessiblePathsToDisplay += '<option value="' + pathsForThisGroup + '" class="' + g + '">' + pathsForThisGroup + '</option>';
-            }
-        }    
-    accessiblePathsToDisplay += '</select></p>';
-    divWithInfo.innerHTML += accessiblePathsToDisplay;
-    var pathPoint_start = '<p id="pSelectStartPoint" style="display: block;">Select the start point of the path: ';
-    pathPoint_start += '<select id="startPoint">';
-    for ( var ap=0; ap<userGroups[ "defaultGroup" ].accessiblePaths.length; ap++ ) {
-        var pathsForThisGroup = userGroups[ "defaultGroup" ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ];
-        pathSup = pathsMap_stringToObj[ pathsForThisGroup ];
-        for ( var s in pathSup ) {    
-          	if ( s==="1" )
-          		pathPoint_start += '<option selected class="' + pathsForThisGroup + '">' + s + '</option>';
-           	else
-           		pathPoint_start += '<option class="' + pathsForThisGroup + '">' + s + '</option>';
-           	}
-        }
-	pathPoint_start += '</select></p>';
-    divWithInfo.innerHTML += pathPoint_start;
-    var pathPoint_end = '<p id="pSelectEndPoint" style="display: block;">Select the end point of the path: ';
-    pathPoint_end += '<select id="endPoint">';
-    for ( var ap=0; ap<userGroups[ "defaultGroup" ].accessiblePaths.length; ap++ ) {
-        var pathsForThisGroup = userGroups[ "defaultGroup" ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ]; 
-        pathSup = pathsMap_stringToObj[ pathsForThisGroup ];
-        for ( var e in pathSup ) {
-        	if ( e==="2" )
-        		pathPoint_end += '<option selected class="' + pathsForThisGroup + '">' + e + '</option>';
-        	else
-        		pathPoint_end += '<option class="' + pathsForThisGroup + '">' + e + '</option>';
-        	}
-        }    
-	pathPoint_end += '</select></p>';
-    divWithInfo.innerHTML += pathPoint_end;
-    divWithInfo.innerHTML += '<center><input id="buttonForNewPath" type="button" style="display: none;"' + 
-        'onclick="getNewPath()" value="Run a new path"/></center>';
-    divWithInfo.innerHTML += '<center><input id="cameraType" type="button" style="display: none;"' + 
-        'onclick="changeCameraType()" value="Switch to manual camera"/></center>';
-    divWithInfo.innerHTML += '<center><input id="buttonVisitEnviroment3d" type="button" style="display: none;"' + 
-        'onclick="showEnvironment3D()" value="Visit"/></center>';
-    document.body.appendChild( divWithInfo );
-    $("#selectAccessiblePaths").chainedTo("#selectGroup");
-    $("#startPoint").chainedTo("#selectAccessiblePaths");
-    $("#endPoint").chainedTo("#selectAccessiblePaths");
-	}
-
-
 function initFloor () {
     var floorTexture = new THREE.ImageUtils.loadTexture( 'textures/floor.jpg' );
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
@@ -248,7 +109,7 @@ function initLights () {
 	}
 
 
-function initObjects () {
+function initServers () {
     for ( var i=0; i<objects.info.numObjects; i++ ) {
         if ( objects[objects.info.objectsList[i]].type=='cuboid' ) {
             var object = objects[objects.info.objectsList[i]];
@@ -285,7 +146,7 @@ function initObjects () {
 
 function initRenderer () {
 	renderer = new THREE.WebGLRenderer();
-    renderer.setSize( windowInnerWidth, window.innerHeight );
+    renderer.setSize( windowInnerWidth, windowInnerHeight );
     document.body.appendChild( renderer.domElement );
 	}
 
@@ -294,14 +155,6 @@ function initStats () {
     statsContainer = document.getElementById( 'divStats' );
     stats = new Stats();
     statsContainer.appendChild( stats.domElement );
-    }
-
-
-function initUnlockMovements () {
-    unlockWMovement = true;
-    unlockSMovement = true;
-    unlockAMovement = true;
-    unlockDMovement = true;
     }    
 
 
@@ -320,8 +173,6 @@ function initWalls () {
         colladaWalls.position.set(0,-2,0);//x,z,y- if you think in blender dimensions
         colladaWalls.scale.set(2,2,2);
         scene.add( colladaWalls ); 
-
-    console.log ( colladaWalls );
         } );
     /*var colladaWalls;
     var loader = new THREE.ColladaLoader();

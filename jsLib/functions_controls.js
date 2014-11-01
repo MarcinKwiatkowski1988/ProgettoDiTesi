@@ -1,4 +1,3 @@
-var controls;
 var minPath_Lenght = 0;
 var pathControls;
 var speedDurationMultiplier = 1.5;
