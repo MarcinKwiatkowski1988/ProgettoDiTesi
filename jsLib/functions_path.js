@@ -1,3 +1,7 @@
+var cubePointChoosen_start;
+var cubePointChoosen_end; 
+var pathClickableFaces = [];
+var PCFsupp = [];
 var pathWCPFS = {}; //pathWithControlPointsForSpline
 
 
@@ -13,6 +17,27 @@ function clonePath ( pathToClone ) {
             pathWCPFS[ p ].adj[ a ] = pathToClone[ p ].adj[ a ];
             
         }
+    }
+
+
+function createSEPoints () {
+    for ( var pointCuboid in pathSup ) {
+        var cubeGeometry = new THREE.CubeGeometry( 0.5, 0.5, 0.5 );
+        var cubeSMaterial = new THREE.MeshBasicMaterial( { color: col_darkBlue } ); 
+        var cubeEMaterial = new THREE.MeshBasicMaterial( { color: col_darkGreen } ); 
+        var cubeS = new THREE.Mesh( cubeGeometry, cubeSMaterial );
+        var cubeE = new THREE.Mesh( cubeGeometry, cubeEMaterial );
+        cubeS.position.set( pathSup[ pointCuboid ].pos[ 0 ]-0.25, pathSup[ pointCuboid ].pos[ 1 ], pathSup[ pointCuboid ].pos[ 2 ] );
+        cubeE.position.set( pathSup[ pointCuboid ].pos[ 0 ]+0.25, pathSup[ pointCuboid ].pos[ 1 ], pathSup[ pointCuboid ].pos[ 2 ] );
+        scene.add( cubeS );
+        scene.add( cubeE );
+        SCFsupp = [ cubeS, pointCuboid, "startPoint" ];
+        pathClickableFaces.push( SCFsupp ) ;
+        SCFsupp = [ cubeE, pointCuboid, "endPoint" ];
+        pathClickableFaces.push( SCFsupp ) ;
+        }
+    cubePointChoosen_start = pathClickableFaces[ 0 ][ 0 ];
+    cubePointChoosen_end = pathClickableFaces[ 1 ][ 0 ];    
     }
 
 
@@ -39,8 +64,10 @@ function getPathAndRun () {
 
 function getPointsFromGraph () {
     var g = new Graph( path );
-    var startPoint = document.getElementById('startPoint').value || "2";
-    var endPoint = document.getElementById('endPoint').value || "1";
+    //var startPoint = document.getElementById('startPoint').value || "2";
+    //var endPoint = document.getElementById('endPoint').value || "1";
+    var startPoint = GET[ "startPoint" ] || "1";
+    var endPoint = GET[ "endPoint" ] || "2";
     var min_path = g.findShortestPath( startPoint, endPoint );
     var points = [];
     minPath_Lenght = 0;
