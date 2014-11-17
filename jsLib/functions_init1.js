@@ -11,6 +11,9 @@ var unlockDMovement;
 function init1 () {
     init_base();
 
+    getParamsFromHttpAddress ( GET ); 
+    path = pathsMap_stringToObj[ GET[ "pathsSelection" ] ];
+
     //v9.4
     //automaticORmanual = 1; //0->automatic; 1->manual
     automaticORmanual = 0; //0->automatic; 1->manual
@@ -32,6 +35,7 @@ function init1 () {
     render();
 
     document.addEventListener( 'mousedown', onMouseDown_server, false );
+    document.addEventListener( 'mousemove', onMouseMove, false ); 
     window.addEventListener( 'resize', onWindowResize, false );
       
     }

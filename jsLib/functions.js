@@ -1,6 +1,6 @@
-var col_darkBlue = 0x00004C;
-var col_darkGreen = 0x002900;
-var col_lightBlue = 0X03030FF;
+var col_darkBlue = 0x19195E;
+var col_darkGreen = 0x193E19;
+var col_lightBlue = 0X66FFFF;
 var col_lightGreen = 0x00FF00;
 var pointChoosen_start = "1";
 var pointChoosen_end = "2";
@@ -64,6 +64,17 @@ function applyAccessiblePathsSelection () {
 	    		}
 	  		}
 		}  
+
+
+	function onMouseMove ( event ) { //mouse moved during manual navigation
+		if (automaticORmanual!=0) {
+			var movementX = event.movementX || 0;
+			var mouseX = ( event.clientX / windowInnerWidth ) * 2 - 1;
+			var multiplier = Math.abs( mouseX );
+			//cameraEye.rotation.y -= movementX * multiplier * 0.01; //* 0.002;
+			cameraEye.rotation.y -= movementX * 0.01;
+			}
+		}
 
 
 	function onWindowResize () {
