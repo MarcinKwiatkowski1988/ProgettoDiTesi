@@ -24,10 +24,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "221.292",
-            "-x2": "221.125",
-            "-y1": "681.983",
-            "-y2": "725.957"
+            "-x1": "221.2",
+            "-x2": "221.2",
+            "-y1": "700",
+            "-y2": "725.9"
           },
           {
             "-fill": "none",
@@ -36,10 +36,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "221.292",
-            "-x2": "186.431",
-            "-y1": "681.983",
-            "-y2": "681.983"
+            "-x1": "221.2",
+            "-x2": "186.4",
+            "-y1": "700",
+            "-y2": "700"
           },
           {
             "-fill": "none",
@@ -48,10 +48,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "186.431",
-            "-x2": "186.265",
-            "-y1": "681.983",
-            "-y2": "659.95"
+            "-x1": "186.4",
+            "-x2": "186.4",
+            "-y1": "700",
+            "-y2": "659.9"
           },
           {
             "-fill": "none",
@@ -60,10 +60,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "186.265",
-            "-x2": "87.668",
-            "-y1": "659.95",
-            "-y2": "659.932"
+            "-x1": "186.4",
+            "-x2": "87.6",
+            "-y1": "659.9",
+            "-y2": "659.9"
           },
           {
             "-fill": "none",
@@ -72,10 +72,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "87.063",
-            "-y1": "659.932",
-            "-y2": "680.566"
+            "-x1": "87.6",
+            "-x2": "87.6",
+            "-y1": "659.9",
+            "-y2": "680.5"
           },
           {
             "-fill": "none",
@@ -84,10 +84,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.063",
-            "-x2": "19.835",
-            "-y1": "680.566",
-            "-y2": "680.566"
+            "-x1": "87.6",
+            "-x2": "19.8",
+            "-y1": "680.5",
+            "-y2": "680.5"
           },
           {
             "-fill": "none",
@@ -96,10 +96,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "87.668",
-            "-y1": "659.932",
-            "-y2": "649.305"
+            "-x1": "87.6",
+            "-x2": "87.6",
+            "-y1": "659.9",
+            "-y2": "640"
           },
           {
             "-fill": "none",
@@ -108,10 +108,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "19.995",
-            "-y1": "649.305",
-            "-y2": "649.305"
+            "-x1": "87.6",
+            "-x2": "19.8",
+            "-y1": "640",
+            "-y2": "640"
           },
           {
             "-fill": "none",
@@ -120,10 +120,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "87.668",
-            "-y1": "649.305",
-            "-y2": "589.485"
+            "-x1": "87.6",
+            "-x2": "87.6",
+            "-y1": "640",
+            "-y2": "589.5"
           },
           {
             "-fill": "none",
@@ -132,10 +132,10 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "68.912",
-            "-y1": "589.485",
-            "-y2": "589.485"
+            "-x1": "87.6",
+            "-x2": "68",
+            "-y1": "589.5",
+            "-y2": "589.5"
           },
           {
             "-fill": "none",
@@ -144,10 +144,130 @@ var jsPaths_3 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "123.514",
-            "-y1": "589.485",
-            "-y2": "589.485"
+            "-x1": "87.6",
+            "-x2": "122",
+            "-y1": "589.5",
+            "-y2": "589.5"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "186.4",
+            "-x2": "238",
+            "-y1": "659.9",
+            "-y2": "659.9"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "238",
+            "-x2": "238",
+            "-y1": "659.9",
+            "-y2": "606"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "238",
+            "-x2": "444",
+            "-y1": "606",
+            "-y2": "606"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "238",
+            "-x2": "238",
+            "-y1": "606",
+            "-y2": "539"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "238",
+            "-x2": "93.5",
+            "-y1": "539",
+            "-y2": "539"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "93.5",
+            "-x2": "93.5",
+            "-y1": "539",
+            "-y2": "436.6"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "93.5",
+            "-x2": "19.8",
+            "-y1": "436.6",
+            "-y2": "436.6"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "93.5",
+            "-x2": "93.5",
+            "-y1": "436.6",
+            "-y2": "377.8"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "93.5",
+            "-x2": "132.7",
+            "-y1": "377.8",
+            "-y2": "377.8"
+          },
+          {
+            "-fill": "none",
+            "-stroke": "#FF0000",
+            "-stroke-linecap": "round",
+            "-stroke-linejoin": "round",
+            "-stroke-miterlimit": "10",
+            "-stroke-width": "2",
+            "-x1": "132.7",
+            "-x2": "132.7",
+            "-y1": "377.8",
+            "-y2": "323.4"
           }
         ]
       }
