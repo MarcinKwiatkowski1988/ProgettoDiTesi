@@ -9,6 +9,7 @@
 	<script src="jsLib/ColladaLoader.js"></script>
 	<script src="jsLib/OrbitControls.js"></script>
 	<script src="jsLib/Stats.js"></script> <!-- prevents the error on functions_init : 315 -->
+	<script src="jsLib/TrackballControls.js"></script>
 	<script src="jsLib/THREEx.KeyboardState.js"></script> 
 
 	<script src="inputs/input_lights.js"></script>
@@ -70,6 +71,7 @@
 		pathPoint_end += '</select></p>';
 	    toDisplay += pathPoint_end;*/
 
+	    toDisplay += '<input type="hidden" name="pathsSelection" id="pathsSelection" value="' + GET[ "pathsSelection" ] + '" />';
 	    toDisplay += '<input type="hidden" name="startPoint" id="startPoint" value="' + pointChoosen_start + '" />';
 	    toDisplay += '<input type="hidden" name="endPoint" id="endPoint" value="' + pointChoosen_end + '" />';
 
