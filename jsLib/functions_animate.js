@@ -24,34 +24,42 @@ function animate_onManualCamera () {
   var moveDistance = 5 * delta; // 200 pixels per second
       
   // move forwards/backwards/left/right
-  if ( keyboard.pressed("W") && ( canAccessArea(moveDistance) || unlockWMovement ) ) {
+  if ( keyboard.pressed( "W" ) && ( canAccessArea(moveDistance) || unlockWMovement ) ) {
     cameraEye.translateZ( -moveDistance );
     unlockWMovement = false;
     unlockSMovement = true;
     }
-  if ( keyboard.pressed("S") && ( canAccessArea(moveDistance) || unlockSMovement ) ) {
+  if ( keyboard.pressed( "S" ) && ( canAccessArea(moveDistance) || unlockSMovement ) ) {
     cameraEye.translateZ(  moveDistance );
     unlockWMovement = true;
     unlockSMovement = false;
     }
-  if ( keyboard.pressed("A") && ( canAccessArea(moveDistance) || unlockAMovement ) ) {
+  if ( keyboard.pressed( "A" ) && ( canAccessArea(moveDistance) || unlockAMovement ) ) {
     cameraEye.translateX( -moveDistance );
     unlockAMovement = false;
     unlockDMovement = true;
     }
-  if ( keyboard.pressed("D") && ( canAccessArea(moveDistance) || unlockDMovement ) ) {
+  if ( keyboard.pressed( "D" ) && ( canAccessArea(moveDistance) || unlockDMovement ) ) {
     cameraEye.translateX(  moveDistance ); 
     unlockAMovement = true;
     unlockDMovement = false;
     }
 
   // rotate left/right/up/down
-  if ( keyboard.pressed("Q") )
-    cameraEye.rotation.y += 0.01;
-  if ( keyboard.pressed("E") )
-    cameraEye.rotation.y -= 0.01;
+  if ( keyboard.pressed( "Q" ) )
+    cameraEye.rotation.y += 0.02;
+  if ( keyboard.pressed( "E" ) )
+    cameraEye.rotation.y -= 0.02;
+
+  if ( keyboard.pressed( "M" ) ) {
+    var element = document;//.body;
+    element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+    element.requestPointerLock();
+    //document.requestPointerLock();
+    }
+
       
-  var relativeCameraOffset = new THREE.Vector3(0,0,1);
+  var relativeCameraOffset = new THREE.Vector3( 0,0,1 );
   var cameraOffset = relativeCameraOffset.applyMatrix4( cameraEye.matrixWorld );
 
   camera.position.x = cameraOffset.x;

@@ -24,10 +24,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "221.292",
-            "-x2": "221.125",
-            "-y1": "681.983",
-            "-y2": "725.957"
+            "-x1": "221.2",
+            "-x2": "221.2",
+            "-y1": "700",
+            "-y2": "725.9"
           },
           {
             "-fill": "none",
@@ -36,10 +36,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "221.292",
-            "-x2": "186.431",
-            "-y1": "681.983",
-            "-y2": "681.983"
+            "-x1": "221.2",
+            "-x2": "186.4",
+            "-y1": "700",
+            "-y2": "700"
           },
           {
             "-fill": "none",
@@ -48,10 +48,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "186.431",
-            "-x2": "186.265",
-            "-y1": "681.983",
-            "-y2": "659.95"
+            "-x1": "186.4",
+            "-x2": "186.4",
+            "-y1": "700",
+            "-y2": "659.9"
           },
           {
             "-fill": "none",
@@ -60,10 +60,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "186.265",
-            "-x2": "87.668",
-            "-y1": "659.95",
-            "-y2": "659.932"
+            "-x1": "186.4",
+            "-x2": "87.6",
+            "-y1": "659.9",
+            "-y2": "659.9"
           },
           {
             "-fill": "none",
@@ -72,10 +72,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "87.063",
-            "-y1": "659.932",
-            "-y2": "680.566"
+            "-x1": "87.6",
+            "-x2": "87.6",
+            "-y1": "659.9",
+            "-y2": "680.5"
           },
           {
             "-fill": "none",
@@ -84,10 +84,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.063",
-            "-x2": "19.835",
-            "-y1": "680.566",
-            "-y2": "680.566"
+            "-x1": "87.6",
+            "-x2": "19.8",
+            "-y1": "680.5",
+            "-y2": "680.5"
           },
           {
             "-fill": "none",
@@ -96,10 +96,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "87.668",
-            "-y1": "659.932",
-            "-y2": "649.305"
+            "-x1": "87.6",
+            "-x2": "87.6",
+            "-y1": "659.9",
+            "-y2": "640"
           },
           {
             "-fill": "none",
@@ -108,10 +108,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "19.995",
-            "-y1": "649.305",
-            "-y2": "649.305"
+            "-x1": "87.6",
+            "-x2": "19.8",
+            "-y1": "640",
+            "-y2": "640"
           },
           {
             "-fill": "none",
@@ -120,10 +120,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "87.668",
-            "-y1": "649.305",
-            "-y2": "589.485"
+            "-x1": "87.6",
+            "-x2": "87.6",
+            "-y1": "640",
+            "-y2": "589.5"
           },
           {
             "-fill": "none",
@@ -132,10 +132,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "68.912",
-            "-y1": "589.485",
-            "-y2": "589.485"
+            "-x1": "87.6",
+            "-x2": "68",
+            "-y1": "589.5",
+            "-y2": "589.5"
           },
           {
             "-fill": "none",
@@ -144,10 +144,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "87.668",
-            "-x2": "123.514",
-            "-y1": "589.485",
-            "-y2": "589.485"
+            "-x1": "87.6",
+            "-x2": "122",
+            "-y1": "589.5",
+            "-y2": "589.5"
           },
           {
             "-fill": "none",
@@ -156,10 +156,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "186.265",
-            "-x2": "218.429",
-            "-y1": "659.95",
-            "-y2": "659.932"
+            "-x1": "186.4",
+            "-x2": "238",
+            "-y1": "659.9",
+            "-y2": "659.9"
           },
           {
             "-fill": "none",
@@ -168,10 +168,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "218.429",
-            "-x2": "218.429",
-            "-y1": "659.932",
-            "-y2": "622.732"
+            "-x1": "238",
+            "-x2": "238",
+            "-y1": "659.9",
+            "-y2": "606"
           },
           {
             "-fill": "none",
@@ -180,10 +180,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "218.429",
-            "-x2": "474.531",
-            "-y1": "622.732",
-            "-y2": "622.732"
+            "-x1": "238",
+            "-x2": "444",
+            "-y1": "606",
+            "-y2": "606"
           },
           {
             "-fill": "none",
@@ -192,10 +192,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "218.429",
-            "-x2": "218.429",
-            "-y1": "622.732",
-            "-y2": "548.727"
+            "-x1": "238",
+            "-x2": "238",
+            "-y1": "606",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -204,10 +204,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "218.429",
-            "-x2": "93.551",
-            "-y1": "548.727",
-            "-y2": "548.727"
+            "-x1": "238",
+            "-x2": "93.5",
+            "-y1": "539",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -216,10 +216,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "93.551",
-            "-x2": "93.551",
-            "-y1": "548.727",
-            "-y2": "436.597"
+            "-x1": "93.5",
+            "-x2": "93.5",
+            "-y1": "539",
+            "-y2": "436.6"
           },
           {
             "-fill": "none",
@@ -228,10 +228,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "93.551",
-            "-x2": "17.482",
-            "-y1": "436.597",
-            "-y2": "436.597"
+            "-x1": "93.5",
+            "-x2": "19.8",
+            "-y1": "436.6",
+            "-y2": "436.6"
           },
           {
             "-fill": "none",
@@ -240,10 +240,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "93.551",
-            "-x2": "93.551",
-            "-y1": "436.597",
-            "-y2": "377.854"
+            "-x1": "93.5",
+            "-x2": "93.5",
+            "-y1": "436.6",
+            "-y2": "377.8"
           },
           {
             "-fill": "none",
@@ -252,10 +252,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "93.551",
-            "-x2": "132.758",
-            "-y1": "377.854",
-            "-y2": "377.854"
+            "-x1": "93.5",
+            "-x2": "132.7",
+            "-y1": "377.8",
+            "-y2": "377.8"
           },
           {
             "-fill": "none",
@@ -264,10 +264,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "132.758",
-            "-x2": "132.758",
-            "-y1": "377.854",
-            "-y2": "323.446"
+            "-x1": "132.7",
+            "-x2": "132.7",
+            "-y1": "377.8",
+            "-y2": "323.4"
           },
           {
             "-fill": "none",
@@ -276,10 +276,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "177.865",
-            "-x2": "177.868",
-            "-y1": "548.727",
-            "-y2": "250.31"
+            "-x1": "177.8",
+            "-x2": "177.8",
+            "-y1": "539",
+            "-y2": "250.3"
           },
           {
             "-fill": "none",
@@ -288,10 +288,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "177.868",
-            "-x2": "36.373",
-            "-y1": "250.31",
-            "-y2": "250.31"
+            "-x1": "177.8",
+            "-x2": "18",
+            "-y1": "250.3",
+            "-y2": "250.3"
           },
           {
             "-fill": "none",
@@ -300,10 +300,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "135.163",
-            "-y1": "250.312",
-            "-y2": "279.86"
+            "-x1": "120",
+            "-x2": "120",
+            "-y1": "250.3",
+            "-y2": "279.8"
           },
           {
             "-fill": "none",
@@ -312,10 +312,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "18.15",
-            "-y1": "279.86",
-            "-y2": "279.86"
+            "-x1": "120",
+            "-x2": "18",
+            "-y1": "279.8",
+            "-y2": "279.8"
           },
           {
             "-fill": "none",
@@ -324,10 +324,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "37.508",
-            "-y1": "188.304",
-            "-y2": "188.304"
+            "-x1": "120",
+            "-x2": "18",
+            "-y1": "188.3",
+            "-y2": "188.3"
           },
           {
             "-fill": "none",
@@ -336,10 +336,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "135.163",
-            "-y1": "188.304",
-            "-y2": "166.449"
+            "-x1": "120",
+            "-x2": "120",
+            "-y1": "188.3",
+            "-y2": "179"
           },
           {
             "-fill": "none",
@@ -348,10 +348,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "21.775",
-            "-y1": "166.449",
-            "-y2": "166.449"
+            "-x1": "120",
+            "-x2": "18",
+            "-y1": "179",
+            "-y2": "179"
           },
           {
             "-fill": "none",
@@ -360,10 +360,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "135.163",
-            "-y1": "166.449",
-            "-y2": "135.198"
+            "-x1": "120",
+            "-x2": "120",
+            "-y1": "179",
+            "-y2": "151"
           },
           {
             "-fill": "none",
@@ -372,10 +372,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "21.775",
-            "-y1": "135.198",
-            "-y2": "135.198"
+            "-x1": "120",
+            "-x2": "18",
+            "-y1": "151",
+            "-y2": "151"
           },
           {
             "-fill": "none",
@@ -384,10 +384,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "135.163",
-            "-y1": "135.198",
-            "-y2": "117.991"
+            "-x1": "120",
+            "-x2": "120",
+            "-y1": "151",
+            "-y2": "133"
           },
           {
             "-fill": "none",
@@ -396,10 +396,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "26.355",
-            "-y1": "117.991",
-            "-y2": "117.991"
+            "-x1": "120",
+            "-x2": "18",
+            "-y1": "133",
+            "-y2": "133"
           },
           {
             "-fill": "none",
@@ -408,10 +408,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "218.429",
-            "-x2": "282.757",
-            "-y1": "548.727",
-            "-y2": "548.727"
+            "-x1": "238",
+            "-x2": "275",
+            "-y1": "539",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -420,10 +420,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "282.757",
-            "-y1": "548.727",
-            "-y2": "508.374"
+            "-x1": "275",
+            "-x2": "275",
+            "-y1": "539",
+            "-y2": "495"
           },
           {
             "-fill": "none",
@@ -432,10 +432,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "226.81",
-            "-y1": "508.374",
-            "-y2": "508.374"
+            "-x1": "275",
+            "-x2": "219",
+            "-y1": "495",
+            "-y2": "495"
           },
           {
             "-fill": "none",
@@ -444,10 +444,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "226.81",
-            "-x2": "226.81",
-            "-y1": "508.374",
-            "-y2": "409.357"
+            "-x1": "219",
+            "-x2": "219",
+            "-y1": "495",
+            "-y2": "400"
           },
           {
             "-fill": "none",
@@ -456,10 +456,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "250.593",
-            "-x2": "250.593",
-            "-y1": "508.374",
-            "-y2": "408.355"
+            "-x1": "258",
+            "-x2": "258",
+            "-y1": "495",
+            "-y2": "400"
           },
           {
             "-fill": "none",
@@ -468,10 +468,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "282.757",
-            "-y1": "508.374",
-            "-y2": "323.446"
+            "-x1": "275",
+            "-x2": "275",
+            "-y1": "495",
+            "-y2": "323.4"
           },
           {
             "-fill": "none",
@@ -480,10 +480,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "215.266",
-            "-y1": "323.446",
-            "-y2": "323.446"
+            "-x1": "275",
+            "-x2": "219",
+            "-y1": "323.4",
+            "-y2": "323.4"
           },
           {
             "-fill": "none",
@@ -492,10 +492,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "282.757",
-            "-y1": "323.446",
-            "-y2": "272.755"
+            "-x1": "275",
+            "-x2": "275",
+            "-y1": "323.4",
+            "-y2": "250"
           },
           {
             "-fill": "none",
@@ -504,10 +504,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "222.898",
-            "-y1": "272.755",
-            "-y2": "272.755"
+            "-x1": "275",
+            "-x2": "219",
+            "-y1": "250",
+            "-y2": "250"
           },
           {
             "-fill": "none",
@@ -516,10 +516,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "282.757",
-            "-x2": "320.632",
-            "-y1": "548.727",
-            "-y2": "548.727"
+            "-x1": "275",
+            "-x2": "320.6",
+            "-y1": "539",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -528,10 +528,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "320.632",
-            "-x2": "320.632",
-            "-y1": "548.727",
-            "-y2": "539.448"
+            "-x1": "320.6",
+            "-x2": "320.6",
+            "-y1": "539",
+            "-y2": "545"
           },
           {
             "-fill": "none",
@@ -540,10 +540,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "320.632",
-            "-x2": "389.469",
-            "-y1": "539.448",
-            "-y2": "539.259"
+            "-x1": "320.6",
+            "-x2": "374",
+            "-y1": "539",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -552,10 +552,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "389.469",
-            "-y1": "539.259",
-            "-y2": "589.485"
+            "-x1": "374",
+            "-x2": "374",
+            "-y1": "539",
+            "-y2": "565"
           },
           {
             "-fill": "none",
@@ -564,10 +564,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "389.469",
-            "-y1": "539.259",
-            "-y2": "499.472"
+            "-x1": "374",
+            "-x2": "374",
+            "-y1": "539",
+            "-y2": "490"
           },
           {
             "-fill": "none",
@@ -576,10 +576,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "355.051",
-            "-y1": "499.472",
-            "-y2": "499.472"
+            "-x1": "374",
+            "-x2": "335",
+            "-y1": "490",
+            "-y2": "490"
           },
           {
             "-fill": "none",
@@ -588,10 +588,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "355.051",
-            "-x2": "355.051",
-            "-y1": "499.472",
-            "-y2": "530.717"
+            "-x1": "335",
+            "-x2": "335",
+            "-y1": "490",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -600,10 +600,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "389.469",
-            "-y1": "499.472",
-            "-y2": "425.72"
+            "-x1": "374",
+            "-x2": "374",
+            "-y1": "490",
+            "-y2": "410"
           },
           {
             "-fill": "none",
@@ -612,10 +612,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "330.234",
-            "-y1": "425.72",
-            "-y2": "425.72"
+            "-x1": "374",
+            "-x2": "330.2",
+            "-y1": "410",
+            "-y2": "410"
           },
           {
             "-fill": "none",
@@ -624,10 +624,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "389.469",
-            "-y1": "425.72",
-            "-y2": "308.367"
+            "-x1": "374",
+            "-x2": "374",
+            "-y1": "410",
+            "-y2": "308.3"
           },
           {
             "-fill": "none",
@@ -636,10 +636,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "389.469",
-            "-x2": "320.031",
-            "-y1": "308.367",
-            "-y2": "308.367"
+            "-x1": "374",
+            "-x2": "320",
+            "-y1": "308.3",
+            "-y2": "308.3"
           },
           {
             "-fill": "none",
@@ -648,10 +648,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "320.031",
-            "-x2": "320.031",
-            "-y1": "308.367",
-            "-y2": "235.973"
+            "-x1": "320",
+            "-x2": "320",
+            "-y1": "308.3",
+            "-y2": "250"
           },
           {
             "-fill": "none",
@@ -660,10 +660,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "320.031",
-            "-x2": "393.323",
-            "-y1": "235.973",
-            "-y2": "235.973"
+            "-x1": "320",
+            "-x2": "393.3",
+            "-y1": "250",
+            "-y2": "250"
           },
           {
             "-fill": "none",
@@ -672,10 +672,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "320.031",
-            "-x2": "320.031",
-            "-y1": "235.973",
-            "-y2": "205.758"
+            "-x1": "320",
+            "-x2": "320",
+            "-y1": "250",
+            "-y2": "213"
           },
           {
             "-fill": "none",
@@ -684,10 +684,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "320.031",
-            "-x2": "393.323",
-            "-y1": "205.758",
-            "-y2": "205.758"
+            "-x1": "320",
+            "-x2": "393.3",
+            "-y1": "213",
+            "-y2": "213"
           },
           {
             "-fill": "none",
@@ -696,10 +696,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "177.868",
-            "-x2": "177.868",
-            "-y1": "250.31",
-            "-y2": "143.499"
+            "-x1": "177.8",
+            "-x2": "177.8",
+            "-y1": "250.3",
+            "-y2": "143.5"
           },
           {
             "-fill": "none",
@@ -708,10 +708,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "177.868",
-            "-x2": "208.509",
-            "-y1": "143.499",
-            "-y2": "143.499"
+            "-x1": "177.8",
+            "-x2": "208.5",
+            "-y1": "143.5",
+            "-y2": "143.5"
           },
           {
             "-fill": "none",
@@ -720,10 +720,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "208.509",
-            "-x2": "208.509",
-            "-y1": "143.499",
-            "-y2": "120.219"
+            "-x1": "208.5",
+            "-x2": "208.5",
+            "-y1": "143.5",
+            "-y2": "120.2"
           },
           {
             "-fill": "none",
@@ -732,10 +732,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "208.509",
-            "-x2": "285.354",
-            "-y1": "120.219",
-            "-y2": "120.219"
+            "-x1": "208.5",
+            "-x2": "285.3",
+            "-y1": "120.2",
+            "-y2": "120.2"
           },
           {
             "-fill": "none",
@@ -744,10 +744,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "208.509",
-            "-x2": "301.611",
-            "-y1": "143.499",
-            "-y2": "143.499"
+            "-x1": "208.5",
+            "-x2": "290",
+            "-y1": "143.5",
+            "-y2": "143.5"
           },
           {
             "-fill": "none",
@@ -756,10 +756,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "208.509",
-            "-x2": "208.509",
-            "-y1": "143.499",
-            "-y2": "167.737"
+            "-x1": "208.5",
+            "-x2": "208.5",
+            "-y1": "143.5",
+            "-y2": "167.7"
           },
           {
             "-fill": "none",
@@ -768,10 +768,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "208.509",
-            "-x2": "287.3",
-            "-y1": "167.737",
-            "-y2": "167.737"
+            "-x1": "208.5",
+            "-x2": "285.3",
+            "-y1": "167.7",
+            "-y2": "167.7"
           },
           {
             "-fill": "none",
@@ -780,10 +780,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "301.611",
-            "-x2": "301.611",
-            "-y1": "143.499",
-            "-y2": "158.678"
+            "-x1": "290",
+            "-x2": "290",
+            "-y1": "143.5",
+            "-y2": "158.6"
           },
           {
             "-fill": "none",
@@ -792,10 +792,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "301.611",
-            "-x2": "370.306",
-            "-y1": "158.678",
-            "-y2": "158.678"
+            "-x1": "290",
+            "-x2": "370.3",
+            "-y1": "158.6",
+            "-y2": "158.6"
           },
           {
             "-fill": "none",
@@ -804,10 +804,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "301.611",
-            "-x2": "301.611",
-            "-y1": "143.499",
-            "-y2": "126.211"
+            "-x1": "290",
+            "-x2": "290",
+            "-y1": "143.5",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -816,10 +816,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "301.611",
-            "-x2": "474.531",
-            "-y1": "126.211",
-            "-y2": "126.211"
+            "-x1": "290",
+            "-x2": "444",
+            "-y1": "126.2",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -828,10 +828,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "474.531",
-            "-x2": "516.281",
-            "-y1": "548.727",
-            "-y2": "548.727"
+            "-x1": "444",
+            "-x2": "508",
+            "-y1": "539",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -840,10 +840,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "516.281",
-            "-x2": "516.281",
-            "-y1": "548.727",
-            "-y2": "561.473"
+            "-x1": "516.3",
+            "-x2": "508",
+            "-y1": "539",
+            "-y2": "561.4"
           },
           {
             "-fill": "none",
@@ -852,10 +852,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "516.281",
-            "-x2": "552.093",
-            "-y1": "561.473",
-            "-y2": "561.473"
+            "-x1": "508",
+            "-x2": "560",
+            "-y1": "539",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -864,10 +864,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "552.093",
-            "-y1": "561.473",
-            "-y2": "591.281"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "539",
+            "-y2": "591.2"
           },
           {
             "-fill": "none",
@@ -876,10 +876,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "516.281",
-            "-y1": "591.281",
-            "-y2": "591.281"
+            "-x1": "560",
+            "-x2": "508",
+            "-y1": "591.2",
+            "-y2": "591.2"
           },
           {
             "-fill": "none",
@@ -888,10 +888,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "590.74",
-            "-y1": "591.281",
-            "-y2": "591.281"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "591.2",
+            "-y2": "591.2"
           },
           {
             "-fill": "none",
@@ -900,10 +900,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "590.511",
-            "-y1": "561.473",
-            "-y2": "561.473"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "539",
+            "-y2": "547"
           },
           {
             "-fill": "none",
@@ -912,10 +912,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "552.093",
-            "-y1": "561.473",
-            "-y2": "532.967"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "539",
+            "-y2": "517"
           },
           {
             "-fill": "none",
@@ -924,10 +924,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "590.511",
-            "-y1": "532.967",
-            "-y2": "532.967"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "517",
+            "-y2": "517"
           },
           {
             "-fill": "none",
@@ -936,10 +936,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "552.093",
-            "-y1": "532.967",
-            "-y2": "495.303"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "517",
+            "-y2": "481"
           },
           {
             "-fill": "none",
@@ -948,10 +948,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "578.448",
-            "-y1": "495.303",
-            "-y2": "495.162"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "481",
+            "-y2": "481"
           },
           {
             "-fill": "none",
@@ -960,10 +960,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "552.093",
-            "-y1": "495.303",
-            "-y2": "460.521"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "481",
+            "-y2": "445"
           },
           {
             "-fill": "none",
@@ -972,10 +972,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "590.511",
-            "-y1": "460.521",
-            "-y2": "460.521"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "445",
+            "-y2": "445"
           },
           {
             "-fill": "none",
@@ -984,10 +984,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "552.093",
-            "-y1": "460.521",
-            "-y2": "431.062"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "445",
+            "-y2": "420"
           },
           {
             "-fill": "none",
@@ -996,10 +996,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "590.511",
-            "-y1": "431.062",
-            "-y2": "431.062"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "420",
+            "-y2": "420"
           },
           {
             "-fill": "none",
@@ -1008,10 +1008,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "552.093",
-            "-x2": "521.649",
-            "-y1": "431.062",
-            "-y2": "431.062"
+            "-x1": "560",
+            "-x2": "508",
+            "-y1": "420",
+            "-y2": "420"
           },
           {
             "-fill": "none",
@@ -1020,10 +1020,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "555.823",
-            "-y1": "422.977",
-            "-y2": "403.105"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "420",
+            "-y2": "393"
           },
           {
             "-fill": "none",
@@ -1032,10 +1032,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "521.649",
-            "-y1": "403.105",
-            "-y2": "403.105"
+            "-x1": "560",
+            "-x2": "508",
+            "-y1": "393",
+            "-y2": "393"
           },
           {
             "-fill": "none",
@@ -1044,10 +1044,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "590.511",
-            "-y1": "403.105",
-            "-y2": "403.105"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "393",
+            "-y2": "393"
           },
           {
             "-fill": "none",
@@ -1056,10 +1056,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "555.823",
-            "-y1": "403.105",
-            "-y2": "383.567"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "393",
+            "-y2": "383.5"
           },
           {
             "-fill": "none",
@@ -1068,10 +1068,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "474.531",
-            "-x2": "474.531",
-            "-y1": "622.732",
-            "-y2": "548.727"
+            "-x1": "444",
+            "-x2": "444",
+            "-y1": "606",
+            "-y2": "539"
           },
           {
             "-fill": "none",
@@ -1080,10 +1080,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "474.531",
-            "-x2": "474.531",
-            "-y1": "548.727",
-            "-y2": "383.567"
+            "-x1": "444",
+            "-x2": "444",
+            "-y1": "539",
+            "-y2": "383.5"
           },
           {
             "-fill": "none",
@@ -1092,10 +1092,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "474.531",
-            "-x2": "474.531",
-            "-y1": "383.567",
-            "-y2": "126.211"
+            "-x1": "444",
+            "-x2": "444",
+            "-y1": "383.5",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -1104,10 +1104,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "555.823",
-            "-y1": "383.567",
-            "-y2": "344.217"
+            "-x1": "560",
+            "-x2": "560",
+            "-y1": "383.5",
+            "-y2": "344.2"
           },
           {
             "-fill": "none",
@@ -1116,10 +1116,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "521.649",
-            "-y1": "344.217",
-            "-y2": "344.217"
+            "-x1": "560",
+            "-x2": "521.6",
+            "-y1": "344.2",
+            "-y2": "344.2"
           },
           {
             "-fill": "none",
@@ -1128,10 +1128,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "591.227",
-            "-y1": "344.217",
-            "-y2": "344.217"
+            "-x1": "560",
+            "-x2": "590.7",
+            "-y1": "344.2",
+            "-y2": "344.2"
           },
           {
             "-fill": "none",
@@ -1140,10 +1140,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "555.823",
-            "-x2": "510.448",
-            "-y1": "319.386",
-            "-y2": "319.386"
+            "-x1": "560",
+            "-x2": "508",
+            "-y1": "319.4",
+            "-y2": "319.4"
           },
           {
             "-fill": "none",
@@ -1152,10 +1152,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "510.448",
-            "-x2": "510.448",
-            "-y1": "319.386",
-            "-y2": "383.567"
+            "-x1": "508",
+            "-x2": "508",
+            "-y1": "319.4",
+            "-y2": "383.5"
           },
           {
             "-fill": "none",
@@ -1164,10 +1164,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "510.448",
-            "-x2": "474.531",
-            "-y1": "383.567",
-            "-y2": "383.567"
+            "-x1": "508",
+            "-x2": "444",
+            "-y1": "383.5",
+            "-y2": "383.5"
           },
           {
             "-fill": "none",
@@ -1176,10 +1176,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "510.448",
-            "-x2": "555.823",
-            "-y1": "383.567",
-            "-y2": "383.567"
+            "-x1": "508",
+            "-x2": "560",
+            "-y1": "383.5",
+            "-y2": "383.5"
           },
           {
             "-fill": "none",
@@ -1188,10 +1188,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "474.531",
-            "-x2": "562.313",
-            "-y1": "243.604",
-            "-y2": "243.604"
+            "-x1": "444",
+            "-x2": "562.3",
+            "-y1": "243.6",
+            "-y2": "243.6"
           },
           {
             "-fill": "none",
@@ -1200,10 +1200,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "562.313",
-            "-y1": "243.604",
-            "-y2": "194.257"
+            "-x1": "562.3",
+            "-x2": "562.3",
+            "-y1": "243.6",
+            "-y2": "197.4"
           },
           {
             "-fill": "none",
@@ -1212,10 +1212,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "595.99",
-            "-y1": "194.257",
-            "-y2": "194.257"
+            "-x1": "562.3",
+            "-x2": "596",
+            "-y1": "197.4",
+            "-y2": "197.4"
           },
           {
             "-fill": "none",
@@ -1224,10 +1224,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "562.313",
-            "-y1": "194.257",
-            "-y2": "164.733"
+            "-x1": "562.3",
+            "-x2": "562.3",
+            "-y1": "197.4",
+            "-y2": "169"
           },
           {
             "-fill": "none",
@@ -1236,10 +1236,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "594.565",
-            "-y1": "164.733",
-            "-y2": "164.733"
+            "-x1": "562.3",
+            "-x2": "596",
+            "-y1": "169",
+            "-y2": "169"
           },
           {
             "-fill": "none",
@@ -1248,10 +1248,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "562.313",
-            "-y1": "164.733",
-            "-y2": "125.709"
+            "-x1": "562.3",
+            "-x2": "562.3",
+            "-y1": "169",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -1260,10 +1260,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "593.767",
-            "-y1": "125.709",
-            "-y2": "125.709"
+            "-x1": "562.3",
+            "-x2": "596",
+            "-y1": "126.2",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -1272,10 +1272,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "562.313",
-            "-x2": "562.313",
-            "-y1": "125.709",
-            "-y2": "100.899"
+            "-x1": "562.3",
+            "-x2": "562.3",
+            "-y1": "126.2",
+            "-y2": "100.9"
           },
           {
             "-fill": "none",
@@ -1284,10 +1284,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "513.916",
-            "-y1": "243.604",
-            "-y2": "222.816"
+            "-x1": "500",
+            "-x2": "500",
+            "-y1": "243.6",
+            "-y2": "237"
           },
           {
             "-fill": "none",
@@ -1296,10 +1296,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "550.438",
-            "-y1": "222.816",
-            "-y2": "222.816"
+            "-x1": "500",
+            "-x2": "550.4",
+            "-y1": "237",
+            "-y2": "237"
           },
           {
             "-fill": "none",
@@ -1308,10 +1308,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "513.916",
-            "-y1": "222.816",
-            "-y2": "197.395"
+            "-x1": "500",
+            "-x2": "500",
+            "-y1": "237",
+            "-y2": "197.4"
           },
           {
             "-fill": "none",
@@ -1320,10 +1320,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "550.594",
-            "-y1": "197.395",
-            "-y2": "197.395"
+            "-x1": "500",
+            "-x2": "550.4",
+            "-y1": "197.4",
+            "-y2": "197.4"
           },
           {
             "-fill": "none",
@@ -1332,10 +1332,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "513.916",
-            "-y1": "197.395",
-            "-y2": "161.883"
+            "-x1": "500",
+            "-x2": "500",
+            "-y1": "197.4",
+            "-y2": "169"
           },
           {
             "-fill": "none",
@@ -1344,10 +1344,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "550.594",
-            "-y1": "161.883",
-            "-y2": "161.883"
+            "-x1": "500",
+            "-x2": "550.4",
+            "-y1": "169",
+            "-y2": "169"
           },
           {
             "-fill": "none",
@@ -1356,10 +1356,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "513.916",
-            "-y1": "161.883",
-            "-y2": "127.458"
+            "-x1": "500",
+            "-x2": "500",
+            "-y1": "169",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -1368,10 +1368,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "550.594",
-            "-y1": "127.458",
-            "-y2": "127.458"
+            "-x1": "500",
+            "-x2": "550.4",
+            "-y1": "126.2",
+            "-y2": "126.2"
           },
           {
             "-fill": "none",
@@ -1380,10 +1380,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "513.916",
-            "-x2": "513.916",
-            "-y1": "127.458",
-            "-y2": "100.684"
+            "-x1": "500",
+            "-x2": "500",
+            "-y1": "126.2",
+            "-y2": "100.6"
           },
           {
             "-fill": "none",
@@ -1392,10 +1392,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "135.163",
-            "-y1": "188.304",
-            "-y2": "213.755"
+            "-x1": "120",
+            "-x2": "120",
+            "-y1": "188.3",
+            "-y2": "213.7"
           },
           {
             "-fill": "none",
@@ -1404,10 +1404,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "25.974",
-            "-y1": "213.755",
-            "-y2": "213.755"
+            "-x1": "120",
+            "-x2": "18",
+            "-y1": "213.7",
+            "-y2": "213.7"
           },
           {
             "-fill": "none",
@@ -1416,10 +1416,10 @@ var jsPaths_1 = { // add to all paths_*.js those lines: "groupPathsJSonName": "j
             "-stroke-linejoin": "round",
             "-stroke-miterlimit": "10",
             "-stroke-width": "2",
-            "-x1": "135.163",
-            "-x2": "135.163",
-            "-y1": "213.755",
-            "-y2": "250.312"
+            "-x1": "120",
+            "-x2": "120",
+            "-y1": "213.7",
+            "-y2": "250.3"
           }
         ]
       }
