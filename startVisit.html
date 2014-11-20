@@ -8,6 +8,18 @@
       }
     </style>-->
   <!--<canvas id='canvasToNavigateIn' style='display: block; width: 100%; height: 100%;'></canvas>-->
+
+      <style>
+
+      #blocker {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.1);
+        }
+
+    </style>
+
 </head>
 <body>
   <div id='startingConfigMenu' style='display: block; width: 120%; height: 120%; position: absolute; background-color: #FFFFFF;'></div>
@@ -39,11 +51,18 @@
   <script src="jsLib/functions_init1.js"></script>
   <script src="jsLib/functions_path.js"></script>
   <script src="jsLib/functions_pathsFromSVG.js"></script>
+  <script src="jsLib/functions_pointerLock.js"></script>
   <script src="jsLib/graph.js"></script>
   <script src="jsLib/graph_alt.js"></script>    
 
   <div id="divStats" style="position: absolute; left:25px; top:25px"></div>
   
+  <div id="blocker" style='display: none;'><!--<div id="instructions"></div>--></div>
+
+  <div id="newCursor" style='display: none; position: absolute; left: 50%; top:50%'>
+    <img src='textures/newCursor.png' width='50px' height='50px'></img></div>  
+
+
   <script>
 
     init1();

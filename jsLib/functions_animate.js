@@ -50,14 +50,6 @@ function animate_onManualCamera () {
     cameraEye.rotation.y += 0.02;
   if ( keyboard.pressed( "E" ) )
     cameraEye.rotation.y -= 0.02;
-
-  if ( keyboard.pressed( "M" ) ) {
-    var element = document;//.body;
-    element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
-    element.requestPointerLock();
-    //document.requestPointerLock();
-    }
-
       
   var relativeCameraOffset = new THREE.Vector3( 0,0,1 );
   var cameraOffset = relativeCameraOffset.applyMatrix4( cameraEye.matrixWorld );
@@ -70,7 +62,8 @@ function animate_onManualCamera () {
 
 
 function changeCameraType () {
-  if (automaticORmanual==0) {      
+  if (automaticORmanual==0) {    
+    pointerLock_on();  
     document.getElementById('cameraType').value = 'Switch to automatic camera';
     initCameraManual();
     initUnlockMovements();
@@ -83,6 +76,7 @@ function changeCameraType () {
     delete pathControls;
     automaticORmanual = 1;
   } else {
+    pointerLock_off();
     document.getElementById('cameraType').value = 'Switch to manual camera';
     initCameraAutomatic();
     getNewPath();

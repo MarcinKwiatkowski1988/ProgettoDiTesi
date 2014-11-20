@@ -7,6 +7,9 @@ var pointChoosen_end = "2";
 var windowInnerHeight = window.innerHeight;
 var windowInnerWidth = window.innerWidth;
 
+var cursorPosX = windowInnerWidth/2;
+var cursorPosY = windowInnerHeight/2;
+
 function applyAccessiblePathsSelection () {
 	var obj = document.getElementById( "buttonVisitEnviroment3d" );
 	obj.style.display = 'block';
@@ -46,8 +49,10 @@ function applyAccessiblePathsSelection () {
 
 
 	function onMouseDown_server ( event ) { //served clicked
-		mouse.x = ( event.clientX / windowInnerWidth ) * 2 - 1;
-	  	mouse.y = - ( event.clientY / windowInnerHeight ) * 2 + 1; 
+		//mouse.x = ( event.clientX / windowInnerWidth ) * 2 - 1;
+	  	//mouse.y = - ( event.clientY / windowInnerHeight ) * 2 + 1;
+	  	mouse.x = ( cursorPosX / windowInnerWidth ) * 2 - 1;
+	  	mouse.y = - ( cursorPosY / windowInnerHeight ) * 2 + 1;
 	  	// find intersections - create a Ray with origin at the mouse position and direction into the scene (camera direction)
 	  	var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
 	  	projector.unprojectVector( vector, camera );
@@ -59,7 +64,7 @@ function applyAccessiblePathsSelection () {
 	      		var objFaceNum = serversClickableFaces[ scf ][ 1 ];
 	      		if ( !objFounded && serversClickableFaces[ scf ][ 0 ] === intersects[ 0 ].object && intersects[ 0 ].object.geometry.faces[ objFaceNum ]==intersects[ 0 ].face ) {
 	        		objFounded = true;
-	        		window.open( serversClickableFaces[ scf ][ 2 ] );  
+	        		window.open( serversClickableFaces[ scf ][ 2 ] ); 
 	      			}
 	    		}
 	  		}
@@ -69,10 +74,22 @@ function applyAccessiblePathsSelection () {
 	function onMouseMove ( event ) { //mouse moved during manual navigation
 		if (automaticORmanual!=0) {
 			var movementX = event.movementX || 0;
-			var mouseX = ( event.clientX / windowInnerWidth ) * 2 - 1;
-			var multiplier = Math.abs( mouseX );
+			var movementY = event.movementY || 0;
+			//var mouseX = ( event.clientX / windowInnerWidth ) * 2 - 1;
+			//var multiplier = Math.abs( mouseX );
 			//cameraEye.rotation.y -= movementX * multiplier * 0.01; //* 0.002;
-			cameraEye.rotation.y -= movementX * 0.01;
+			cameraEye.rotation.y -= movementX * 0.007;
+			var newCursor = document.getElementById( 'newCursor' );
+			cursorPosX += movementX;
+			cursorPosY += movementY;
+			var cursorSuppX = cursorPosX/windowInnerWidth;
+			var cursorSuppY = cursorPosY/windowInnerHeight;
+			if ( cursorSuppX>0.97 || cursorSuppX<0 || cursorSuppY>0.95 || cursorSuppY<0 ) {
+				cursorPosX = windowInnerWidth/2;
+				cursorPosY = windowInnerHeight/2;
+				}
+			newCursor.style.left = cursorPosX + 'px';
+			newCursor.style.top = cursorPosY + 'px';
 			}
 		}
 
