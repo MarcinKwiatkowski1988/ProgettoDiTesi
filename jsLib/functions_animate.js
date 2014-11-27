@@ -2,11 +2,10 @@ function animate() {
   render();
   requestAnimationFrame( animate );
 
-  if (automaticORmanual==0) {
+  if (automaticORmanual==0)
     animate_onAutomaticCamera();
-  } else {
+  else
     animate_onManualCamera();
-    }
 
   stats.update();  
   }
@@ -47,9 +46,9 @@ function animate_onManualCamera () {
 
   // rotate left/right/up/down
   if ( keyboard.pressed( "Q" ) )
-    cameraEye.rotation.y += 0.02;
+    cameraEye.rotation.y += 0.04;
   if ( keyboard.pressed( "E" ) )
-    cameraEye.rotation.y -= 0.02;
+    cameraEye.rotation.y -= 0.04;
       
   var relativeCameraOffset = new THREE.Vector3( 0,0,1 );
   var cameraOffset = relativeCameraOffset.applyMatrix4( cameraEye.matrixWorld );

@@ -4,7 +4,32 @@
 
 </head>
 <body>
-  <center><p>Benvenuto</p></br></br>
-    <p>Se vuoi continuare e visitare virtualmente il CED, clicca <a href="userSelection.html">qui</a></p></center>
+
+	<script src="inputs/jsonFromSVGPaths/jsPaths_1.js"></script>
+  	<script src="inputs/jsonFromSVGPaths/jsPaths_2.js"></script>
+  	<script src="inputs/jsonFromSVGPaths/jsPaths_3.js"></script>
+	<script src="config/config_userGroups.js"></script>
+
+  	<center>
+  		<img src="img/sogeiLogo.png"></img></br>
+  		<p><h1>Benvenuto/a al modello virtuale del CED</h1></p></br></br>
+    	<p>Il progetto &eacute nato dall' esigenza di Sogei s.p.a. di dover mostrare il Centro Elaborazione Dati (CED) senza incorrere in nessun tipo di rischio di fuori-uscita di informazioni (data la natura riservata e segreta dei dati contenuti all' interno) o di manomissione dei server: il CED garantisce l' operativit&agrave dei servizi erogati direttamente ai cittadini e ai professionisti (ad esempio l' invio telematico delle dichiarazioni, le visure ipocatastali, i pagamenti tramite F24, ... ), tutti servizi fruibili 365 giorni l' anno per 24 ore al giorno. Per far fronte a queste problematiche si &eacute deciso di ricostruire un modello virtuale del CED in modo che le future visite al complesso vengano effettuate tramite la rete e non fisicamente.
+    	Per poter proseguire la navigazione bisogna scegliere un' utenza che si vuole impersonare: non tutti possono visitare tutto (le stesse aree) il CED; a seconda della scelta potrai visitare diverse aree della struttura.</p>
+    	</center>
+
+    <div id="divWithUserSelection"></div>
+
+    <script>
+		var divWithUserSelection = document.getElementById( 'divWithUserSelection' );
+		divWithUserSelection.class = 'divWithUserSelection';
+	    var toDisplay = '<form action="pathsSelection.html" id="formUserSelection" method="GET">';
+	    for ( var g in userGroups ) 
+	        toDisplay += '<input name="userSelection" type="radio" value="' + g + '"  />' + g + '</br>' + userGroups[ g ].desc + '</br></br>';  
+	    toDisplay += '<center><input type="submit" class="button" value="Inizia la visita" /></center>';
+	    toDisplay += '</form>';
+	    divWithUserSelection.innerHTML = toDisplay;
+	    document.body.appendChild( divWithUserSelection );
+
+    	</script>
 </body>
 </html>

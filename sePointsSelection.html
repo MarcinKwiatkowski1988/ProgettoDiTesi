@@ -8,8 +8,7 @@
 
 	<script src="jsLib/ColladaLoader.js"></script>
 	<script src="jsLib/OrbitControls.js"></script>
-	<script src="jsLib/Stats.js"></script> <!-- prevents the error on functions_init : 315 -->
-	<script src="jsLib/TrackballControls.js"></script>
+	<script src="jsLib/Stats.js"></script>
 	<script src="jsLib/THREEx.KeyboardState.js"></script> 
 
 	<script src="inputs/input_lights.js"></script>
@@ -27,64 +26,21 @@
 	<script src="jsLib/functions_path.js"></script>
 	<script src="jsLib/functions_pathsFromSVG.js"></script>	
 
-	<div id="divStats" style="position: absolute; left:25px; top:25px"></div> <!-- prevents the error on function_init : 316 -->
-	<div id="divMenu" style="position: absolute; right:25px; top:25px"></div>
+	<div id="divStats" style="position: absolute; left:25px; top:25px"></div>
+	<center><div id="divMenu" style="background-color: #FFFFFF; position: absolute; left:10%; top:5px; width:80%"></div></center>
 
 	<script> 
 		init2();
 		animate2();
 
-		/*var divWithSEPointsSelection = document.createElement('div');
-		divWithSEPointsSelection.id = 'divWithSEPointsSelection';
-		divWithSEPointsSelection.class = 'divWithSEPointsSelection';
-		divWithSEPointsSelection.style.position = 'absolute';
-    	divWithSEPointsSelection.style.top = '10px';
-    	divWithSEPointsSelection.style.width = '100%';
-    	divWithSEPointsSelection.style.textAlign = 'right';
-
-		divWithSEPointsSelection.innerHTML = '<p>Hai selezionato: </p></br></br>';
-		for ( var p in GET )
-			divWithSEPointsSelection.innerHTML += p + ': ' + GET[ p ] + '</br>';
-		divWithSEPointsSelection.innerHTML += '</br></br>'; */
-
-		var toDisplay = '<form action="startVisit.html" id="sePointsSelection" method="GET">';
-
-	 	/*var pathPoint_start = '<p id="pSelectStartPoint" style="display: block;">Select the start point of the path: ';
-	    pathPoint_start += '<select name="startPoint" id="startPoint">';
-        for ( var s in pathSup ) {    
-          	if ( s==="1" )
-          		pathPoint_start += '<option selected>' + s + '</option>';
-           	else
-           		pathPoint_start += '<option>' + s + '</option>';
-           	}
-		pathPoint_start += '</select></p>';
-	    toDisplay += pathPoint_start;
-
-	    var pathPoint_end = '<p id="pSelectEndPoint" style="display: block;">Select the end point of the path: ';
-	    pathPoint_end += '<select name="endPoint" id="endPoint">';
-	    for ( var e in pathSup ) {
-	      	if ( e==="2" )
-	       		pathPoint_end += '<option selected>' + e + '</option>';
-	       	else
-	       		pathPoint_end += '<option>' + e + '</option>';
-	       	} 
-		pathPoint_end += '</select></p>';
-	    toDisplay += pathPoint_end;*/
-
+		var toDisplay = 'Da qui &eacute possibile vedere il modello del CED dall\'alto; inoltre usando la rotellina del mouse si pu&ograve avvicinare o allontanare tale modello (con il tasto destro &eacute invece possibile traslarlo sullo schermo). In base alla scelta del gruppo di percosi effettuta, si pu&ograve procedere a scegliere il percorso su cui si vuole effettuare la visita. Ogni punto del percorso &eacute caratterizzato da due cubi: uno a sinistra di colore blu scuro e uno a destra di colore verde scuro. Per selezionare il percorso che si vuole effettuare basta selezionare un punto di inizio (il cubo di sinistra) e un punto di arrivo (il cubo di destra); i cubi selezionati vengono illuminati e il loro colore diventa pi&ugrave chiaro rendendoli distinguibili da quelli non selezionati.';
+		toDisplay += '<form action="startVisit.html" id="sePointsSelection" method="GET">';
 	    toDisplay += '<input type="hidden" name="pathsSelection" id="pathsSelection" value="' + GET[ "pathsSelection" ] + '" />';
 	    toDisplay += '<input type="hidden" name="startPoint" id="startPoint" value="' + pointChoosen_start + '" />';
 	    toDisplay += '<input type="hidden" name="endPoint" id="endPoint" value="' + pointChoosen_end + '" />';
-
-	    toDisplay += '<input type="submit" class="button" value="Scegli i punti di inizio e fine" />';
+	    toDisplay += '<input type="submit" class="button" value="Visita lungo il percorso scelto" />';
 	    toDisplay += '</form>';
-	    //divWithSEPointsSelection.innerHTML += toDisplay;
-
-		//document.body.appendChild( divWithSEPointsSelection );
 		document.getElementById( 'divMenu' ).innerHTML += toDisplay;
-		//menuContainer = document.getElementById( 'divMenu' );
-    	//menuContainer.appendChild( "toDisplay" );
-    	//menuContainer.innerHTML = toDisplay;
-
 		</script>
 
 </body>
