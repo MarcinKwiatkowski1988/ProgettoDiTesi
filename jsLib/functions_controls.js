@@ -16,22 +16,19 @@ function canAccessArea ( movement ) {
     var node_area;
     var positionX = cameraEye.position.x;
     var positionZ = cameraEye.position.z;
-    for ( var i=0; i<accessArea_area.info.numAreas; i++ ) {
+    for ( var i=0; i<accessArea_area.info.numAreas; i++ )
         if ( !canAccessArea && ( positionX>( accessArea_area[accessArea_area.info.areas[i]][0] + wallDistance ) && 
                                  positionX<( accessArea_area[accessArea_area.info.areas[i]][2] - wallDistance ) && 
                                  positionZ<( accessArea_area[accessArea_area.info.areas[i]][1] - wallDistance ) && 
                                  positionZ>( accessArea_area[accessArea_area.info.areas[i]][3] + wallDistance ) ) )
             canAccessArea = true;    
-        }
-     if ( !canAccessArea ) {
-        for ( var j=0; j<accessArea_passage.info.numPassages; j++ ) {
+     if ( !canAccessArea )
+        for ( var j=0; j<accessArea_passage.info.numPassages; j++ )
             if ( !canAccessArea && ( positionX>accessArea_passage[accessArea_passage.info.passages[j]][0] && 
                                      positionX<accessArea_passage[accessArea_passage.info.passages[j]][2] && 
                                      positionZ<accessArea_passage[accessArea_passage.info.passages[j]][1] && 
                                      positionZ>accessArea_passage[accessArea_passage.info.passages[j]][3] ) )
                 canAccessArea = true;    
-            }
-        }
     return canAccessArea;
     }
 

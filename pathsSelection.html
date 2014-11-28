@@ -12,31 +12,34 @@
 
 	<script src="jsLib/functions.js"></script>	
 
+	<center><img src="img/sogeiLogo.png"></img></center></br>
+
+	<div id="divWithPathsSelection"></div>
+
 	<script> 
-		var divWithPathsSelection = document.createElement('div');
-		divWithPathsSelection.id = 'divWithPathsSelection';
-		divWithPathsSelection.class = 'divWithPathsSelection';
+		var divWithPathsSelection = document.getElementById( 'divWithPathsSelection' );
 		var GET = {};
 		var userChoosen;
 		getParamsFromHttpAddress ( GET );
-		divWithPathsSelection.innerHTML = '<p>Hai selezionato: </p></br></br>';
+		divWithPathsSelection.innerHTML = '<center>Hai selezionato di impersonare il seguente gruppo di utenti: </center>';
 		for ( var u in GET ) {
-			divWithPathsSelection.innerHTML += u + ': ' + GET[ u ] + '</br>';
+			divWithPathsSelection.innerHTML += '<center>' + GET[ u ] + '</center></br>';
 			userChoosen = GET[ u ];
 			}
-		divWithPathsSelection.innerHTML += '</br></br>';
 
-		var toDisplay = '<form action="sePointsSelection.html" id="formPathsSelection" method="GET">';
+		divWithPathsSelection.innerHTML += '<center>Per continuare con la visita bisogna scegliere anche un gruppo di percorsi su cui poi si potr&oacute navigare. Il seguente gruppo ha accesso ai seguenti gruppi di percorsi: </center></br></br>';
+
+		var toDisplay = '<center><form action="sePointsSelection.html" id="formPathsSelection" method="GET"><table><tr>';
 	    for ( var ap=0; ap<userGroups[ userChoosen ].accessiblePaths.length; ap++ ) {
             var pathsForThisGroup = userGroups[ userChoosen ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ];	
-	        toDisplay += '<input name="pathsSelection" type="radio" value="' + pathsForThisGroup + '"  />' + pathsForThisGroup;  
+	        toDisplay += '<td><center><input name="pathsSelection" type="radio" value="' + pathsForThisGroup + '" />' + pathsForThisGroup + '</center>'; 
+	        toDisplay += '</br><img src="img/svgPaths/' + pathsForThisGroup + '.svg" width="500px" height="500px"></img></td>'; 
+	        if ( (ap+1)%4==0 )
+	        	toDisplay += '</tr><tr>'; 
 	    	}
-	    toDisplay += '<input type="submit" class="button" value="Scegli il gruppo di percorsi" />';
-	    toDisplay += '</form>';
+	    toDisplay += '</tr><tr><td colspan="4"><center><input type="submit" class="button" value="Scegli il gruppo di percorsi" /></center></td></tr>';
+	    toDisplay += '</table></form></center>';
 	    divWithPathsSelection.innerHTML += toDisplay;
-
-		document.body.appendChild( divWithPathsSelection );
-
 		</script>
 
 </body>

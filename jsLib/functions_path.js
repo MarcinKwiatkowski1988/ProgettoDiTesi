@@ -15,7 +15,6 @@ function clonePath ( pathToClone ) {
         pathWCPFS[ p ].pos[2] = pathToClone[ p ].pos[2];
         for ( var a in pathToClone[ p ].adj )
             pathWCPFS[ p ].adj[ a ] = pathToClone[ p ].adj[ a ];
-            
         }
     }
 
@@ -50,7 +49,6 @@ function getNewPath () {
 
 
 function getPathAndRun () {
-
     clonePath( path ); // need to clone the obj, otherwise pathWCPFS will reference path
     // smooth the curve over this many points
     var smothing = 400;
@@ -64,8 +62,6 @@ function getPathAndRun () {
 
 function getPointsFromGraph () {
     var g = new Graph( path );
-    //var startPoint = document.getElementById('startPoint').value || "2";
-    //var endPoint = document.getElementById('endPoint').value || "1";
     var startPoint = GET[ "startPoint" ] || "1";
     var endPoint = GET[ "endPoint" ] || "2";
     var min_path = g.findShortestPath( startPoint, endPoint );
@@ -73,14 +69,8 @@ function getPointsFromGraph () {
     minPath_Lenght = 0;
     for ( var i=0; i<min_path.length; i++ ) {
         points.push( new THREE.Vector3( pathWCPFS[min_path[i]].pos[0], pathWCPFS[min_path[i]].pos[1], pathWCPFS[min_path[i]].pos[2] ) );
-        //v9.4
-        if ( (i+1)<min_path.length ) {
+        if ( (i+1)<min_path.length )
             minPath_Lenght += pathWCPFS[ min_path[i] ].adj[ min_path[i+1] ];
-            /*console.log ( "point i: " + pathWCPFS[ min_path[i] ].pos[0] );
-            console.log ( "point i+1: " + pathWCPFS[ min_path[i+1] ].pos[0] );
-            console.log ( "distance: " + pathWCPFS[ min_path[i] ].adj[ min_path[i+1] ] );
-            console.log ( "total distance: " + minPath_Lenght ); */
-            }
         }
     return points;
     }

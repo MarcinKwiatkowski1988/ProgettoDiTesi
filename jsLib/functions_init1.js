@@ -9,28 +9,19 @@ var unlockDMovement;
 
 
 function init1 () {
-    //initPointerLock();
     init_base();
 
     getParamsFromHttpAddress ( GET ); 
     path = pathsMap_stringToObj[ GET[ "pathsSelection" ] ];
-
-    //v9.4
-    //automaticORmanual = 1; //0->automatic; 1->manual
     automaticORmanual = 0; //0->automatic; 1->manual
 
-    //v9.4
     initCameraAutomatic();
-    //initCameraManual();
     initCameraEye();  
     initDivWithConfig ();
-
     initRenderer();
-
     initCeiling();
     init_objects();
 
-    //v9.4
     getPathAndRun ();
 
     render();
@@ -38,7 +29,6 @@ function init1 () {
     document.addEventListener( 'mousedown', onMouseDown_server, false );
     document.addEventListener( 'mousemove', onMouseMove, false ); 
     window.addEventListener( 'resize', onWindowResize, false );
-      
     }
 
 
@@ -66,129 +56,37 @@ function initCameraManual () {
 function initDivWithConfig () {
     getParamsFromHttpAddress ( GET );
 	divWithInfo = document.createElement('div');
-	divWithInfo.class = 'divWithInfoControls';
+    divWithInfo.id = 'divWithInfo';
+	divWithInfo.class = 'divWithInfo';
+    divWithInfo.style.display = "block";
+    divWithInfo.style.background = '#FFFFFF';
+    divWithInfo.style.fontSize = '150%';
     divWithInfo.style.position = 'absolute';
-    divWithInfo.style.top = '10px';
-    divWithInfo.style.width = '100%';
-    divWithInfo.style.textAlign = 'right';
-    divWithInfo.innerHTML = '<p>Hai selezionato: </p></br></br>';
-        for ( var p in GET ) {
-            divWithInfo.innerHTML += p + ': ' + GET[ p ] + '</br>';
-            }
-        divWithInfo.innerHTML += '</br></br>';
-    /*var groupToDisplay = '<p id="pSelectGroup" style="display: block;">Select the user group: ';
-    groupToDisplay += '<select id="selectGroup" name="selectGroup">';
-    groupToDisplay += '<option selected value="none">Nothing selected</option>';
-    for ( var g in userGroups ) 
-        groupToDisplay += '<option value="' + g + '">' + g + '</option>';  
-    groupToDisplay += '</select></p>';
-    divWithInfo.innerHTML += groupToDisplay;
-    var accessiblePathsToDisplay = '<p id="pSelectAccessiblePaths" style="display: block;">Select the accessible paths: ';
-    accessiblePathsToDisplay += '<select id="selectAccessiblePaths" name="selectAccessiblePaths" onchange="applyAccessiblePathsSelection()">';
-    for ( var g in userGroups ) {
-        for ( var ap=0; ap<userGroups[ g ].accessiblePaths.length; ap++ ) {
-            var pathsForThisGroup = userGroups[ g ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ];
-            accessiblePathsToDisplay += '<option value="' + pathsForThisGroup + '" class="' + g + '">' + pathsForThisGroup + '</option>';
-            }
-        }    
-    accessiblePathsToDisplay += '</select></p>';
-    divWithInfo.innerHTML += accessiblePathsToDisplay;*/
-    /*var pathPoint_start = '<p id="pSelectStartPoint" style="display: none;">Select the start point of the path: ';
-    pathPoint_start += '<select id="startPoint">';
-    for ( var ap=0; ap<userGroups[ "defaultGroup" ].accessiblePaths.length; ap++ ) {
-        var pathsForThisGroup = userGroups[ "defaultGroup" ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ];
-        pathSup = pathsMap_stringToObj[ pathsForThisGroup ];
-        for ( var s in pathSup ) {    
-          	if ( s==="1" )
-          		pathPoint_start += '<option selected class="' + pathsForThisGroup + '">' + s + '</option>';
-           	else
-           		pathPoint_start += '<option class="' + pathsForThisGroup + '">' + s + '</option>';
-           	}
-        }
-	pathPoint_start += '</select></p>';
-    divWithInfo.innerHTML += pathPoint_start;
-    var pathPoint_end = '<p id="pSelectEndPoint" style="display: none;">Select the end point of the path: ';
-    pathPoint_end += '<select id="endPoint">';
-    for ( var ap=0; ap<userGroups[ "defaultGroup" ].accessiblePaths.length; ap++ ) {
-        var pathsForThisGroup = userGroups[ "defaultGroup" ].accessiblePaths[ ap ][ "ns0:svg" ][ "groupPathsName" ]; 
-        pathSup = pathsMap_stringToObj[ pathsForThisGroup ];
-        for ( var e in pathSup ) {
-        	if ( e==="2" )
-        		pathPoint_end += '<option selected class="' + pathsForThisGroup + '">' + e + '</option>';
-        	else
-        		pathPoint_end += '<option class="' + pathsForThisGroup + '">' + e + '</option>';
-        	}
-        }    
-	pathPoint_end += '</select></p>';
-    divWithInfo.innerHTML += pathPoint_end;*/
-    //divWithInfo.innerHTML += '<center><input id="buttonForNewPath" type="button" style="display: none;"' + 
-    //    'onclick="getNewPath()" value="Run a new path"/></center>';
-    divWithInfo.innerHTML += '<center><input id="cameraType" type="button" style="display: none;"' + 
-        'onclick="changeCameraType()" value="Switch to manual camera"/></center>';
+    divWithInfo.style.left = '20%';
+    divWithInfo.style.top = '5px';
+    divWithInfo.style.width = '70%';
+    //divWithInfo.style.textAlign = 'center';
+    divWithInfo.innerHTML = '<p>Il percorso che hai selezionato (' + GET.pathsSelection + ') va dal punto ' + GET.startPoint + ' a ' + GET.endPoint + '.</p></br></br>';
+    divWithInfo.innerHTML += 'Prima di iniziare la visita &eacute consigliabile leggere i consigli riportati qui sotto su come muoversi ';
+    divWithInfo.innerHTML += 'all\'interno del modello: </br> - Durante la navigazione automatica puoi usare il mouse per guardare anche ai lati';
+    divWithInfo.innerHTML += '</br> - Durante la navigazione manuale, il sito richieder&agrave automaticamente di bloccare il cursore del tuo mouse; ';
+    divWithInfo.innerHTML += '&eacute possibile sbloccarlo premendo il tasto ESC o riattiavarne il suo blocco premendo il tasto "m"; per muoversi ';
+    divWithInfo.innerHTML += 'all\'interno del modello usa invece i seguenti tasti: "w" (per muoversi in avanti), "a" (per muoversi in laterale ';
+    divWithInfo.innerHTML += 'verso sinistra), "d" (per muoversi in laterale verso destra), "s" (per andare indietro). Per ruotare invece si pu&ograve ';
+    divWithInfo.innerHTML += 'usare il movimento del mouse (come si usa solitamente nei giochi) o usare i tasti "q" o "e", per chi fosse provvisto ';
+    divWithInfo.innerHTML += 'solo di tastiera. Cliccando con il puntatore su un server, sulla faccia mostrante un QrCode ver&aacute aperta una nuova ';
+    divWithInfo.innerHTML += 'finestra riguardante il link del QrCode stesso.';
+    divWithInfo.innerHTML += '</br></br>';
     divWithInfo.innerHTML += '<center><input id="buttonVisitEnviroment3d" type="button" style="display: block;"' + 
-        'onclick="showEnvironment3D()" value="Visit"/></center>';
+        'onclick="showEnvironment3D()" value="Inizia la visita"/></center>';
     document.body.appendChild( divWithInfo );
-    //$("#selectAccessiblePaths").chainedTo("#selectGroup");
-    //$("#startPoint").chainedTo("#selectAccessiblePaths");
-    //$("#endPoint").chainedTo("#selectAccessiblePaths");
+    divCameraType = document.createElement('div');
+    divCameraType.style.position = 'absolute';
+    divCameraType.style.left = '48%';
+    divCameraType.style.top = '5px';
+    divCameraType.innerHTML = '<input id="cameraType" type="button" style="display: none;" ' + 'onclick="changeCameraType()" value="Switch to manual camera"/>';
+    document.body.appendChild( divCameraType );
 	}
-
-
-/**function initPointerLock_on () {
-    var blocker = document.getElementById( 'blocker' );
-    var instructions = document.getElementById( 'instructions' );
-    var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
-    if ( havePointerLock ) {
-        var element = document.body;
-        var pointerlockchange = function ( event ) {
-            if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
-                //controls.enabled = true;
-                blocker.style.display = 'none';
-            } else {
-                //controls.enabled = false;
-                //blocker.style.display = '-webkit-box';
-                //blocker.style.display = '-moz-box';
-                blocker.style.display = 'box';
-                instructions.style.display = '';
-                }
-            }
-        /*var pointerlockerror = function ( event ) {
-            instructions.style.display = '';
-            }*/
-
-        // Hook pointer lock state change events
-        /*2document.addEventListener( 'pointerlockchange', pointerlockchange, false );
-        document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
-        document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );*/
-        /*document.addEventListener( 'pointerlockerror', pointerlockerror, false );
-        document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
-        document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );*/
-
-/**        instructions.addEventListener( 'click', function ( event ) {
-            instructions.style.display = 'none';
-            // Ask the browser to lock the pointer
-            element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
-            if ( /Firefox/i.test( navigator.userAgent ) ) {
-                /*var fullscreenchange = function ( event ) {
-                    if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
-                        document.removeEventListener( 'fullscreenchange', fullscreenchange );
-                        document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
-                        element.requestPointerLock();
-                        }
-
-                    } 
-                document.addEventListener( 'fullscreenchange', fullscreenchange, false );
-                document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
-                element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
-                element.requestFullscreen();*/
-/**           } else {
-                element.requestPointerLock();
-                }
-            }, false );
-        } else {
-            instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
-        }
-    }**/
 
 
 function initUnlockMovements () {

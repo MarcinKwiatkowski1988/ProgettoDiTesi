@@ -49,8 +49,6 @@ function applyAccessiblePathsSelection () {
 
 
 	function onMouseDown_server ( event ) { //served clicked
-		//mouse.x = ( event.clientX / windowInnerWidth ) * 2 - 1;
-	  	//mouse.y = - ( event.clientY / windowInnerHeight ) * 2 + 1;
 	  	mouse.x = ( cursorPosX / windowInnerWidth ) * 2 - 1;
 	  	mouse.y = - ( cursorPosY / windowInnerHeight ) * 2 + 1;
 	  	// find intersections - create a Ray with origin at the mouse position and direction into the scene (camera direction)
@@ -75,10 +73,7 @@ function applyAccessiblePathsSelection () {
 		if (automaticORmanual!=0) {
 			var movementX = event.movementX || 0;
 			var movementY = event.movementY || 0;
-			//var mouseX = ( event.clientX / windowInnerWidth ) * 2 - 1;
-			//var multiplier = Math.abs( mouseX );
-			//cameraEye.rotation.y -= movementX * multiplier * 0.01; //* 0.002;
-			cameraEye.rotation.y -= movementX * 0.007;
+			cameraEye.rotation.y -= movementX * 0.004;
 			var newCursor = document.getElementById( 'newCursor' );
 			cursorPosX += movementX;
 			cursorPosY += movementY;
@@ -128,10 +123,8 @@ function hideUnhideObject ( id ) {
 function showEnvironment3D () {
 	getPathAndRun ();
 	animate ();
-	//hideUnhideObject( "pSelectGroup" );
-	//hideUnhideObject( "pSelectAccessiblePaths" );
 	hideUnhideObject( "startingConfigMenu" );
 	hideUnhideObject( "buttonVisitEnviroment3d" );
 	hideUnhideObject( "cameraType" );
-	//hideUnhideObject( "buttonForNewPath" );
+	hideUnhideObject( "divWithInfo" );
 	}  

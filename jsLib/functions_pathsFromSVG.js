@@ -202,9 +202,8 @@ function createPathFromSVG_removeDuplicatePoints ( pathsToUse, pathsToUseLength 
             }
         }
     // removing the nodes that are in the deleted list
-    for ( var dn=0; dn<nodesToDeleteList.length; dn++ ) {
+    for ( var dn=0; dn<nodesToDeleteList.length; dn++ )
         delete pathsToUse[ nodesToDeleteList[dn] ];
-        }
     }
 
 
@@ -271,56 +270,13 @@ function displayPathOnConsole ( pathsToUse ) {
     for ( var kString in pathsToUse ) {	
     	console.log ( "'" + kString + "' {" );
     	var adjString = "   adj: { ";
-    	for ( var a in pathsToUse[ kString ].adj ) {
+    	for ( var a in pathsToUse[ kString ].adj )
 	   		adjString = adjString + "'" + a + "'" + ": " + pathsToUse[ kString ].adj[a] + " ";
-    		}
     	console.log ( adjString + "}," );	
     	console.log ( "   pos: [" + pathsToUse[ kString ].pos[0] + ", " + pathsToUse[ kString ].pos[1] + ", " + pathsToUse[ kString ].pos[2] + "] }" );
 	   	}
     console.log ( "}" );	
 	}
-
-
-/*function path_getMax ( pathsToUse, whichMax ) {
-    var pathLength = Object.keys(pathsToUse).length;
-    var max;
-    var max2;
-    if ( whichMax==='x' )
-        max = pathsToUse[ '1' ].pos[0];
-    else 
-        max = pathsToUse[ '1' ].pos[2];  
-    for ( var i=1; i<(pathLength+1); i++ ) {
-        iString = i.toString();
-        if ( whichMax==='x' )
-            max2 = pathsToUse[ iString ].pos[0];
-        else 
-            max2 = pathsToUse[ iString ].pos[2];
-        if ( max2 > max )
-            max = max2;
-        }
-    return max;    
-    }*/
-
-
-/*function path_getMin ( pathsToUse, whichMin ) {
-    var pathLength = Object.keys(pathsToUse).length;
-    var min;
-    var min2;
-    if ( whichMin==='x' )
-        min = pathsToUse[ '1' ].pos[0];
-    else 
-        min = pathsToUse[ '1' ].pos[2];  
-    for ( var i=1; i<(pathLength+1); i++ ) {
-        iString = i.toString();
-        if ( whichMin==='x' )
-            min2 = pathsToUse[ iString ].pos[0];
-        else 
-            min2 = pathsToUse[ iString ].pos[2];
-        if ( min2 < min )
-            min = min2;
-        }
-    return min;    
-    }*/   
 
 
 function path_getSegments ( pathsToUse ) {
