@@ -5,198 +5,198 @@ var lights = {
 					"l21","l22","l23","l24","l25","l26","l27","l28"] },
 	"l1": {
 		"type": 'point',
-		"pos": [ -2, 2, -1.5 ],
+		"pos": [ -2, 0, -1.5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 3 + 2.5
+		"intensity": 1.25,
+		"distance": 3 + 3
 		},
 	"l2": {
 		"type": 'point',
-		"pos": [ -1, 2, -5 ],
+		"pos": [ -1, 0, -5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},	
 	"l3": {
 		"type": 'point',
-		"pos": [ -3, 2, -9 ],
+		"pos": [ -3, 0, -9 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 3 + 2.5
+		"intensity": 1.25,
+		"distance": 3 + 3
 		},
 	"l4": {
 		"type": 'point',
-		"pos": [ -11, 2, -8 ],
+		"pos": [ -11, 0, -8 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 10 + 2.5
+		"intensity": 1.25,
+		"distance": 10 + 3
 		},
 	"l5": {
 		"type": 'point',
-		"pos": [ -11, 2, -21 ],
+		"pos": [ -11, 0, -21 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 10 + 2.5
+		"intensity": 1.25,
+		"distance": 10 + 3
 		},
 	"l6": {
 		"type": 'point',
-		"pos": [ -11, 2, -28 ],
+		"pos": [ -11, 0, -28 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l7": {
 		"type": 'point',
-		"pos": [ -11, 2, -37 ],
+		"pos": [ -11, 0, -37 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 10 + 2.5
+		"intensity": 1.25,
+		"distance": 10 + 3
 		},
 	"l8": {
 		"type": 'point',
-		"pos": [ 8, 2, -0.5 ],
+		"pos": [ 8, 0, -4 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 6 + 2.5
+		"intensity": 1.25,
+		"distance": 6 + 3
 		},
 	"l9": {
 		"type": 'point',
-		"pos": [ 15, 2, -0.5 ],
+		"pos": [ 15, 0, -4 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 6 + 2.5
+		"intensity": 1.25,
+		"distance": 6 + 3
 		},
 	"l10": {
 		"type": 'point',
-		"pos": [ 3, 2, -11 ],
+		"pos": [ 3, 0, -11 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},									
 	"l11": {
 		"type": 'point',
-		"pos": [ 10, 2, -8 ],
+		"pos": [ 10, 0, -8 ],
 		"hex": 0xFFFFFF,
 		"intensity": 1.0,
-		"distance": 2.5 + 2.5
+		"distance": 2.5 + 3
 		},
 	"l12": {
 		"type": 'point',
-		"pos": [ 16.5, 2, -13 ],
+		"pos": [ 16.5, 0, -13 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l13": {
 		"type": 'point',
-		"pos": [ 16.5, 2, -24 ],
+		"pos": [ 16.5, 0, -24 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l14": {
 		"type": 'point',
-		"pos": [ 16.5, 2, -36 ],
+		"pos": [ 16.5, 0, -36 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l15": {
 		"type": 'point',
-		"pos": [ 23.5, 2, -13 ],
+		"pos": [ 23.5, 0, -13 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 10 + 2.5
+		"intensity": 1.25,
+		"distance": 10 + 3
 		},
 	"l16": {
 		"type": 'point',
-		"pos": [ 23.5, 2, -24 ],
+		"pos": [ 23.5, 0, -24 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 10 + 2.5
+		"intensity": 1.25,
+		"distance": 10 + 3
 		},
 	"l17": {
 		"type": 'point',
-		"pos": [ 23.5, 2, -36 ],
+		"pos": [ 23.5, 0, -36 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 11 + 2.5
+		"intensity": 1.25,
+		"distance": 11 + 3
 		},
 	"l18": {
 		"type": 'point',
-		"pos": [ -3, 2, -16 ],
+		"pos": [ -3, 0, -16 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 4.5 + 2.5
+		"intensity": 1.25,
+		"distance": 4.5 + 3
 		},				
 	"l19": {
 		"type": 'point',
-		"pos": [ -3, 2, -26 ],
+		"pos": [ -3, 0, -26 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 4.5 + 2.5
+		"intensity": 1.25,
+		"distance": 4.5 + 3
 		},
 	"l20": {
 		"type": 'point',
-		"pos": [ -3, 2, -35 ],
+		"pos": [ -3, 0, -35 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 4.5 + 2.5
+		"intensity": 1.25,
+		"distance": 4.5 + 3
 		},
 	"l21": {
 		"type": 'point',
-		"pos": [ 2.5, 2, -19.5 ],
+		"pos": [ 2.5, 0, -19.5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l22": {
 		"type": 'point',
-		"pos": [ 9.5, 2, -7 ],
+		"pos": [ 9.5, 0, -17 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 7 + 2.5
+		"intensity": 1.25,
+		"distance": 7 + 3
 		},
 	"l23": {
 		"type": 'point',
-		"pos": [ 2.5, 2, -27.5 ],
+		"pos": [ 2.5, 0, -27.5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l24": {
 		"type": 'point',
-		"pos": [ 9.5, 2, -27.5 ],
+		"pos": [ 9.5, 0, -27.5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l25": {
 		"type": 'point',
-		"pos": [ 2.5, 2, -33.5 ],
+		"pos": [ 2.5, 0, -33.5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},										
 	"l26": {
 		"type": 'point',
-		"pos": [ 9.5, 2, -33.5 ],
+		"pos": [ 9.5, 0, -33.5 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 5 + 2.5
+		"intensity": 1.25,
+		"distance": 5 + 3
 		},
 	"l27": {
 		"type": 'point',
-		"pos": [ 4, 2, -40 ],
+		"pos": [ 4, 0, -40 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 10 + 2.5
+		"intensity": 1.25,
+		"distance": 10 + 3
 		},
 	"l28": {
 		"type": 'point',
-		"pos": [ 22, 2, -0.5 ],
+		"pos": [ 22, 0, -4 ],
 		"hex": 0xFFFFFF,
-		"intensity": 1.75,
-		"distance": 6 + 2.5
+		"intensity": 1.25,
+		"distance": 6 + 3
 		}			
 };

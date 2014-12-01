@@ -63,7 +63,7 @@ function animate_onManualCamera () {
 function changeCameraType () {
   if (automaticORmanual==0) {    
     pointerLock_on();  
-    document.getElementById('cameraType').value = 'Switch to automatic camera';
+    document.getElementById( 'cameraType' ).value = 'Switch to automatic camera';
     initCameraManual();
     initUnlockMovements();
     camera.position.x = pathControls.object.matrixWorld.getPosition().x;
@@ -76,7 +76,7 @@ function changeCameraType () {
     automaticORmanual = 1;
   } else {
     pointerLock_off();
-    document.getElementById('cameraType').value = 'Switch to manual camera';
+    document.getElementById( 'cameraType' ).value = 'Switch to manual camera';
     initCameraAutomatic();
     getNewPath();
     automaticORmanual = 0;
