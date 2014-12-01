@@ -3,6 +3,9 @@ var clock;
 var GET = {};
 var groupSelected;
 var keyboard;
+var loading = 0;
+//numLights + numLamps(numLights*6) + numServers + floor + ceiling + walls*5
+var loadingTotObjs = lights.info.numLights*7 + objects.info.numObjects + 1 + 1 + 5;
 var mouse = { x: 0, y: 0 };
 var path = {};
 var pathSup = {};
@@ -47,6 +50,7 @@ function initCeiling () {
     ceiling.position.z = -22.25;
     ceiling.rotation.x = Math.PI / 2;
     scene.add( ceiling );
+    loading += 1;
     }
 
 
@@ -62,6 +66,7 @@ function initFloor () {
     floor.position.z = -22.25;
     floor.rotation.x = Math.PI / 2;
     scene.add( floor );
+    loading += 1;
     }
 
 
@@ -79,6 +84,7 @@ function initLights () {
             var pointLight = new THREE.PointLight( light.hex, light.intensity, light.distance );
             pointLight.position.set( light.pos[0], light.pos[1], light.pos[2] );
             scene.add( pointLight );
+            loading += 1;
             }
         }
 	}
@@ -114,6 +120,7 @@ function initServers () {
             scene.add ( cuboid );
             SCFsupp = [ cuboid, object.linkableFace-1, object.link ];
             serversClickableFaces.push( SCFsupp ) ;
+            loading += 1;
             }
         }
     }
@@ -143,7 +150,8 @@ function initWalls () {
         colladaWalls.material.wireframe = false;
         colladaWalls.position.set(0,-2,0);//x,z,y- if you think in blender dimensions
         colladaWalls.scale.set(2,2,2);
-        scene.add( colladaWalls ); 
+        scene.add( colladaWalls );
+        loading += 5;
         } );
     }    
 

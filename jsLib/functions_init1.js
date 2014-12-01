@@ -21,6 +21,8 @@ function init1 () {
     initRenderer();
     initCeiling();
     init_objects();
+    loadingUpdate();
+    initLamps();
 
     getPathAndRun ();
 
@@ -77,7 +79,8 @@ function initDivWithConfig () {
     divWithInfo.innerHTML += 'solo di tastiera. Cliccando con il puntatore su un server, sulla faccia mostrante un QrCode ver&aacute aperta una nuova ';
     divWithInfo.innerHTML += 'finestra riguardante il link del QrCode stesso.';
     divWithInfo.innerHTML += '</br></br>';
-    divWithInfo.innerHTML += '<center><input id="buttonVisitEnviroment3d" type="button" style="display: block;"' + 
+    divWithInfo.innerHTML += 'Modello caricato al:<span id="modelLoading">0</span></br>';
+    divWithInfo.innerHTML += '<center><input id="buttonVisitEnviroment3d" type="button" style="display: none;"' + 
         'onclick="showEnvironment3D()" value="Inizia la visita"/></center>';
     document.body.appendChild( divWithInfo );
     divCameraType = document.createElement('div');
@@ -89,9 +92,42 @@ function initDivWithConfig () {
 	}
 
 
+function initLamp ( j ) {
+    var loader = new THREE.ColladaLoader();
+    loader.options.convertUpAxis = true;
+    loader.load( 'models/lamp.dae', function ( collada ) {   
+        var lampInfo = lights[ lights.info.lightsList[ j ] ];
+        var lamp = collada.scene.children[ 0 ];
+        lamp.name = "lamp";
+        lamp.material.needsUpdate = true;
+        lamp.material.wireframe = false;
+        lamp.rotation.x = Math.PI/2;
+        lamp.position.set( lampInfo.pos[ 0 ], 2.15, lampInfo.pos[ 2 ] );
+        lamp.scale.set( 0.01, 0.01, 0.005 );
+        scene.add( lamp ); 
+        loading += 6;
+        loadingUpdate ();
+        } );
+    } 
+
+
+function initLamps () {
+    for ( var i=0; i<lights.info.numLights; i++ )
+        initLamp ( i );
+    }  
+
+
 function initUnlockMovements () {
     unlockWMovement = true;
     unlockSMovement = true;
     unlockAMovement = true;
     unlockDMovement = true;
-    }    
+    }   
+
+
+function loadingUpdate () {
+    var loadingValue = parseInt ( ( loading / loadingTotObjs ) * 100 ); 
+    document.getElementById( 'modelLoading' ).innerHTML = ' ' + loadingValue + '%';
+    if ( loadingValue == 100 )
+        hideUnhideObject( 'buttonVisitEnviroment3d' );
+    }   
